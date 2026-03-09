@@ -14,7 +14,6 @@ Airflow DAG orchestrates the following steps:
 4. Upload processed data back to GCS
 5. Load processed data into BigQuery
 
-## Architecture
 
 ![Architecture](images/architecture.png)
 
@@ -26,27 +25,6 @@ Airflow DAG orchestrates the following steps:
 * Google BigQuery
 * Python (Pandas)
 * GCP Service Accounts
-
-
-## Project Structure
-
-```
-gcp-airflow-retail-etl/
-│
-├── dags/
-│   └── retail_sales_etl_dag.py
-│
-├── scripts/
-│   ├── upload_to_gcs.py
-│   ├── transform_data.py
-│   └── load_to_bigquery.py
-│
-├── data/
-│   └── retail_sales.csv
-│
-├── docker-compose.yaml
-└── README.md
-```
 
 ## DAG Workflow
 
@@ -81,6 +59,27 @@ http://localhost:8080
 ```
 
 5. Trigger the DAG **retail_sales_etl_pipeline**
+
+## Project Structure
+
+gcp-airflow-retail-etl
+│
+├── dags
+│   ├── retail_sales_etl_dag.py
+│   ├── upload_to_gcs.py
+│   ├── transform_data.py
+│   └── load_to_bigquery.py
+│
+├── images
+│   ├── architecture.png
+│   └── airflow_dag.png
+│
+├── data
+│   └── retail_sales.csv
+│
+├── docker-compose.yaml
+├── requirements.txt
+└── README.md
 
 ## Outcome
 
