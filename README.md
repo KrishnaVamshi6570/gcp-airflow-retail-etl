@@ -27,6 +27,7 @@ Airflow DAG orchestrates the following steps:
 * Python (Pandas)
 * GCP Service Accounts
 
+
 ## Project Structure
 
 ```
@@ -50,6 +51,10 @@ gcp-airflow-retail-etl/
 ## DAG Workflow
 
 upload_to_gcs → transform_data → load_to_bigquery
+
+## Airflow Pipeline
+
+![Airflow DAG](images/airflow_dag.png)
 
 ## How to Run
 

@@ -4,10 +4,12 @@ from datetime import datetime, timedelta
 import sys
 
 sys.path.append("/opt/airflow/scripts")
-
-from scripts.upload_to_gcs import upload_to_gcs
-from scripts.transform_data import transform_data
-from scripts.load_to_bigquery import load_to_bigquery
+from upload_to_gcs import upload_to_gcs
+from transform_data import transform_data
+from load_to_bigquery import load_to_bigquery
+#from scripts.upload_to_gcs import upload_to_gcs
+#from scripts.transform_data import transform_data
+#from scripts.load_to_bigquery import load_to_bigquery
 
 default_args = {
     "owner": "airflow",
@@ -25,7 +27,7 @@ with DAG(
 
     upload_task = PythonOperator(
         task_id="upload_to_gcs",
-        python_callable=upload_file
+        python_callable=upload_to_gcs
     )
 
     transform_task = PythonOperator(
