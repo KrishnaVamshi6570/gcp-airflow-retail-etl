@@ -14,6 +14,10 @@ Airflow DAG orchestrates the following steps:
 4. Upload processed data back to GCS
 5. Load processed data into BigQuery
 
+## Architecture
+
+![Architecture](images/architecture.png)
+
 ## Tech Stack
 
 * Apache Airflow
