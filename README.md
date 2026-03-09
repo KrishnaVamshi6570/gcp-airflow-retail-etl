@@ -85,6 +85,12 @@ gcp-airflow-retail-etl
 
 The pipeline successfully processes retail sales data and loads the transformed dataset into **BigQuery** for analytics and reporting.
 
+## Future Improvements
+
+- Add data quality validation
+- Implement incremental loading
+- Add CI/CD with GitHub Actions
+
 ---
 
 This project demonstrates practical experience with **data engineering workflows, cloud storage, orchestration, and containerized environments.**
