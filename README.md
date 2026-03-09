@@ -56,6 +56,14 @@ upload_to_gcs → transform_data → load_to_bigquery
 
 ![Airflow DAG](images/airflow_dag.png)
 
+## Dataset
+
+This project uses a retail sales dataset containing:
+- total_bill
+- tip
+- customer information
+- transaction data
+
 ## How to Run
 
 1. Clone the repository
