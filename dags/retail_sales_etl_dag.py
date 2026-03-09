@@ -5,9 +5,9 @@ import sys
 
 sys.path.append("/opt/airflow/scripts")
 
-from upload_to_gcs import upload_file
-from transform_data import transform_data
-from load_to_bigquery import load_to_bigquery
+from scripts.upload_to_gcs import upload_to_gcs
+from scripts.transform_data import transform_data
+from scripts.load_to_bigquery import load_to_bigquery
 
 default_args = {
     "owner": "airflow",
