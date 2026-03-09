@@ -61,7 +61,7 @@ http://localhost:8080
 5. Trigger the DAG **retail_sales_etl_pipeline**
 
 ## Project Structure
-
+'''
 gcp-airflow-retail-etl
 │
 ├── dags
@@ -80,7 +80,7 @@ gcp-airflow-retail-etl
 ├── docker-compose.yaml
 ├── requirements.txt
 └── README.md
-
+'''
 ## Outcome
 
 The pipeline successfully processes retail sales data and loads the transformed dataset into **BigQuery** for analytics and reporting.
